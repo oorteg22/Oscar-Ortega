@@ -3,7 +3,6 @@ cv:
   location: El Paso, TX
   email: oscar.jacob.ortega@gmail.com
   phone: "+19156670441"
-  website: https://linkedin.com/in/oscar-ortega-29b3ba286
   social_networks:
     - network: LinkedIn
       username: oscar-ortega-29b3ba286
@@ -34,11 +33,6 @@ cv:
         highlights:
           - Engineered a secure management platform using React, TypeScript, and Node.js.
           - Migrated MySQL databases to Cloud Firestore, ensuring secure data routing and integrity.
-      - name: Banking System Simulation
-        date: 2024
-        highlights:
-          - Developed a multi-role simulation in Java using Role-Based Access Control (RBAC).
-          - Conducted exhaustive JUnit testing to ensure data integrity and transaction logic.
     experience:
       - company: The University of Texas at El Paso
         designation: Masters Teaching Assistant
@@ -48,3 +42,9 @@ cv:
         designation: Laboratory Technician
         start_date: 2018-03
         end_date: 2026-03
+
+design:
+  theme: classic
+  font: Source Sans 3
+  page_size: us-letter
+  color: "#004f90"
