@@ -1,20 +1,31 @@
 name: Render CV
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  rendercv:
+  render:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: sinaatalay/rendercv@v1.15 # Using the specific stable version
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          cv_file_path: Oscar_Ortega_CV.yaml
-          gh_pages_branch: gh-pages
-          force_orphan: true
+          python-version: '3.12'
+
+      - name: Install RenderCV
+        run: pip install "rendercv[full]"
+
+      - name: Render CV
+        run: rendercv render Oscar_Ortega_CV.yaml
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: rendercv_output
+          branch: gh-pages
