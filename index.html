@@ -5,50 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oscar Ortega | Software Engineer</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 40px 20px; color: #333; background-color: #fdfdfd; }
-        header { border-bottom: 4px solid #004f90; padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { color: #004f90; margin: 0; font-size: 2.8em; }
-        h2 { color: #004f90; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
-        .project { background: white; border: 1px solid #eee; border-left: 6px solid #004f90; padding: 25px; margin-bottom: 20px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .tag { display: inline-block; background: #eef4f9; color: #004f90; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; margin-right: 8px; margin-top: 10px; font-weight: bold; border: 1px solid #d0e0ef; }
-        a { color: #004f90; text-decoration: none; font-weight: 600; }
+        :root { --primary: #004f90; --bg: #fdfdfd; --text: #333; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 850px; margin: auto; padding: 40px 20px; color: var(--text); background-color: var(--bg); }
+        header { border-bottom: 4px solid var(--primary); padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { color: var(--primary); margin: 0; font-size: 2.8em; }
+        h2 { color: var(--primary); border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 40px; text-transform: uppercase; font-size: 1.2em; letter-spacing: 1px; }
+        h3 { margin-bottom: 5px; color: #111; }
+        .contact-info { color: #666; font-size: 1em; margin-top: 5px; }
+        .project { background: white; border: 1px solid #eee; border-left: 6px solid var(--primary); padding: 25px; margin-bottom: 25px; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .tag { display: inline-block; background: #eef4f9; color: var(--primary); padding: 4px 12px; border-radius: 20px; font-size: 0.85em; margin-right: 8px; margin-top: 10px; font-weight: bold; border: 1px solid #d0e0ef; }
+        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .skill-cat { font-weight: bold; color: var(--primary); }
+        a { color: var(--primary); text-decoration: none; font-weight: 600; }
         a:hover { text-decoration: underline; }
-        .contact-info { color: #666; font-size: 0.95em; }
     </style>
 </head>
 <body>
     <header>
         <h1>Oscar Ortega</h1>
-        <p class="contact-info"><strong>Software Engineering Graduate Student</strong> (Exp. May 2026)</p>
-        <p class="contact-info">El Paso, TX | <a href="https://linkedin.com/in/oscar-ortega-29b3ba286">LinkedIn</a> | <a href="mailto:oscar.jacob.ortega@gmail.com">Email</a></p>
+        <p class="contact-info"><strong>M.S. Software Engineering Student (Cybersecurity Focus)</strong></p>
+        <p class="contact-info">El Paso, TX | 915-667-0441 | <a href="mailto:oscar.jacob.ortega@gmail.com">oscar.jacob.ortega@gmail.com</a></p>
+        <p class="contact-info"><a href="https://linkedin.com/in/oscar-ortega-29b3ba286">LinkedIn</a> | <a href="https://github.com/oorteg22">GitHub</a></p>
     </header>
 
     <section>
-        <h2>Technical Projects</h2>
-        
-        <div class="project">
-            <h3>Vulnerability-Oriented REST API Testing (VoAPI)</h3>
-            <p>Reproduced and extended a testing framework to identify security flaws (SSRF, SQLi) in real-world APIs. Integrated <strong>SecureBERT</strong> and <strong>LLaMA</strong> models to improve semantic classification of sensitive data flows.</p>
-            <span class="tag">Python</span> <span class="tag">Cybersecurity</span> <span class="tag">Machine Learning</span>
-        </div>
+        <h2>Professional Summary</h2>
+        <p>Highly motivated M.S. Software Engineering student with a strong B.S. Biology background and eight years of research experience. Hands-on graduate-level experience in secure systems concepts, reverse engineering, and network analysis.</p>
+    </section>
 
-        <div class="project">
-            <h3>Full-Stack Administrative Platform</h3>
-            <p>Engineered a secure management platform using React, TypeScript, and Node.js. Successfully migrated MySQL databases to <strong>Cloud Firestore</strong>, ensuring secure data routing and integrity.</p>
-            <span class="tag">React</span> <span class="tag">TypeScript</span> <span class="tag">Cloud Firestore</span>
-        </div>
-
-        <div class="project">
-            <h3>Banking System Simulation</h3>
-            <p>Developed a Java-based multi-role simulation implementing <strong>Role-Based Access Control (RBAC)</strong>. Conducted exhaustive JUnit testing to verify data integrity and secure transaction logic.</p>
-            <span class="tag">Java</span> <span class="tag">JUnit</span> <span class="tag">Security Logic</span>
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div><span class="skill-cat">Programming:</span> React, TypeScript, Node.js, Python, Java, SQL</div>
+            <div><span class="skill-cat">Security:</span> Ghidra, Kali Linux, Wireshark</div>
+            <div><span class="skill-cat">Database/Tools:</span> Firebase, MySQL, Docker, Git, Agile</div>
         </div>
     </section>
 
     <section>
-        <h2>Skills</h2>
-        <p><strong>Languages:</strong> Python, Java, SQL, TypeScript, JavaScript</p>
-        <p><strong>Tools:</strong> Git, Docker, Google Colab, Firebase, Node.js</p>
-    </section> 
+        <h2>Software Engineering Projects</h2>
+        
+        <div class="project">
+            <h3>VoAPI: Vulnerability-Oriented REST API Security Analysis</h3>
+            <p>Reproduced a vulnerability-oriented testing framework published at <strong>USENIX Security</strong>. Validated reproducibility on real-world APIs like Appwrite and Jellyfin, identifying security-relevant endpoints tied to SSRF, SQL injection, and XSS. Enhanced the framework with <strong>SecureBERT</strong> and a fine-tuned <strong>LLaMA-based classifier</strong>.</p>
+            <span class="tag">Reverse Engineering</span> <span class="tag">Python</span> <span class="tag">LLM/AI</span>
+        </div>
+
+        <div class="project">
+            <h3>Full-Stack Administrative Web Platform</h3>
+            <p>Developed a responsive application featuring secure user authentication and dynamic data routing. Built a custom REST API with Node.js and migrated architecture from local MySQL to <strong>Cloud Firestore</strong> service account management.</p>
+            <span class="tag">React</span> <span class="tag">TypeScript</span> <span class="tag">Node.js</span> <span class="tag">NoSQL</span>
+        </div>
+
+        <div class="project">
+            <h3>Banking System Simulation</h3>
+            <p>Developed a Java system with RBAC (customer/manager roles). Implemented <strong>Factory and Strategy design patterns</strong>. Conducted black-box and white-box testing with <strong>JUnit</strong> to ensure reliable balance operations.</p>
+            <span class="tag">Java</span> <span class="tag">OOP Design Patterns</span> <span class="tag">JUnit</span>
+        </div>
+    </section>
 </body>
 </html>
