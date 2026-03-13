@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: sinaatalay/rendercv@v0 # Fixed the action name here
+      - uses: sinaatalay/rendercv@v1.15 # Using the specific stable version
         with:
           cv_file_path: Oscar_Ortega_CV.yaml
           gh_pages_branch: gh-pages
