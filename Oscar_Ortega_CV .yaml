@@ -10,41 +10,23 @@ cv:
       username: oorteg22
   sections:
     summary:
-      - Software Engineering graduate student (May 2026) focused on Systems Design and Cybersecurity.
-      - Background in Biological Sciences with a rigorous analytical approach to vulnerability research.
+      - Software Engineering graduate student focused on Systems Design and Cybersecurity.
     education:
-      - institution: The University of Texas at El Paso
+      - institution: University of Texas at El Paso
         area: Computer Software Engineering
-        degree: Master of Science
+        degree: MS
         start_date: 2023-08
         end_date: 2026-05
-      - institution: The University of Texas at El Paso
-        area: Ecology and Evolutionary Biology
-        degree: Bachelor of Science
-        end_date: 2019-05
     projects:
-      - name: Vulnerability-Oriented REST API Testing (VoAPI)
+      - name: API Security Testing
         date: 2026
         highlights:
-          - Reproduced research-based testing framework to identify security flaws (SSRF, SQLi) in APIs.
-          - Integrated SecureBERT and LLaMA models to improve semantic classification of data flows.
-      - name: Full-Stack Administrative Web Platform
-        date: 2026
-        highlights:
-          - Engineered a secure management platform using React, TypeScript, and Node.js.
-          - Migrated MySQL databases to Cloud Firestore, ensuring secure data routing and integrity.
+          - Identified security flaws in APIs using machine learning models.
     experience:
-      - company: The University of Texas at El Paso
-        designation: Masters Teaching Assistant
+      - company: UTEP
+        designation: Teaching Assistant
         start_date: 2025-09
         end_date: present
-      - company: The University of Texas at El Paso
-        designation: Laboratory Technician
-        start_date: 2018-03
-        end_date: 2026-03
 
 design:
   theme: classic
-  font: Source Sans 3
-  page_size: us-letter
-  color: "#004f90"
