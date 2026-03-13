@@ -1,0 +1,50 @@
+cv:
+  name: Oscar Ortega
+  location: El Paso, TX
+  email: oscar.jacob.ortega@gmail.com
+  phone: "+19156670441"
+  website: https://linkedin.com/in/oscar-ortega-29b3ba286
+  social_networks:
+    - network: LinkedIn
+      username: oscar-ortega-29b3ba286
+    - network: GitHub
+      username: oorteg22
+  sections:
+    summary:
+      - Software Engineering graduate student (May 2026) focused on the intersection of Systems Design and Cybersecurity.
+      - Background in Biological Sciences providing a rigorous analytical approach to vulnerability research and secure full-stack development.
+    education:
+      - institution: The University of Texas at El Paso
+        area: MS in Software Engineering
+        degree: Master of Science
+        start_date: 2023-08
+        end_date: 2026-05
+      - institution: The University of Texas at El Paso
+        area: Ecology and Evolutionary Biology
+        degree: Bachelor of Science
+        end_date: 2019-05
+    projects:
+      - name: Vulnerability-Oriented REST API Testing (VoAPI)
+        date: 2026
+        highlights:
+          - Reproduced and extended a research-based testing framework to identify security flaws (SSRF, SQLi) in real-world APIs.
+          - Integrated SecureBERT and LLaMA models to improve semantic classification of sensitive data flows.
+      - name: Full-Stack Administrative Web Platform
+        date: 2026
+        highlights:
+          - Engineered a secure management platform using React, TypeScript, and Node.js.
+          - Migrated MySQL databases to Cloud Firestore, ensuring secure data routing and integrity.
+      - name: Banking System Simulation
+        date: 2024
+        highlights:
+          - Developed a multi-role simulation in Java using Role-Based Access Control (RBAC).
+          - Conducted exhaustive JUnit testing to ensure data integrity and transaction logic.
+    experience:
+      - company: The University of Texas at El Paso
+        designation: Masters Teaching Assistant
+        start_date: 2025-09
+        end_date: present
+      - company: The University of Texas at El Paso
+        designation: Laboratory Technician
+        start_date: 2018-03
+        end_date: 2026-03
