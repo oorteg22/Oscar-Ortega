@@ -3,39 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oscar Ortega | Security-First Software Engineer</title>
+    <title>Oscar Ortega | Software Engineer</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; color: #333; }
-        header { border-bottom: 2px solid #004f90; padding-bottom: 10px; margin-bottom: 20px; }
-        h1 { color: #004f90; margin: 0; }
-        .project { background: #f4f4f4; padding: 15px; margin-bottom: 15px; border-radius: 5px; }
-        .tag { display: inline-block; background: #004f90; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.8em; margin-right: 5px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 40px 20px; color: #333; background-color: #fdfdfd; }
+        header { border-bottom: 4px solid #004f90; padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { color: #004f90; margin: 0; font-size: 2.8em; }
+        h2 { color: #004f90; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        .project { background: white; border: 1px solid #eee; border-left: 6px solid #004f90; padding: 25px; margin-bottom: 20px; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .tag { display: inline-block; background: #eef4f9; color: #004f90; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; margin-right: 8px; margin-top: 10px; font-weight: bold; border: 1px solid #d0e0ef; }
+        a { color: #004f90; text-decoration: none; font-weight: 600; }
+        a:hover { text-decoration: underline; }
+        .contact-info { color: #666; font-size: 0.95em; }
     </style>
 </head>
 <body>
     <header>
         <h1>Oscar Ortega</h1>
-        <p>Software Engineering Graduate Student | Cybersecurity Enthusiast</p>
-        <p>El Paso, TX | <a href="https://linkedin.com/in/oscar-ortega-29b3ba286">LinkedIn</a> | <a href="mailto:oscar.jacob.ortega@gmail.com">Email</a></p>
+        <p class="contact-info"><strong>Software Engineering Graduate Student</strong> (Exp. May 2026)</p>
+        <p class="contact-info">El Paso, TX | <a href="https://linkedin.com/in/oscar-ortega-29b3ba286">LinkedIn</a> | <a href="mailto:oscar.jacob.ortega@gmail.com">Email</a></p>
     </header>
 
     <section>
-        <h2>Projects</h2>
+        <h2>Technical Projects</h2>
+        
         <div class="project">
             <h3>Vulnerability-Oriented REST API Testing (VoAPI)</h3>
-            <p>Reproduced a testing framework to identify security flaws (SSRF, SQLi) using SecureBERT and LLaMA.</p>
-            <span class="tag">Python</span> <span class="tag">Cybersecurity</span> <span class="tag">AI</span>
+            <p>Reproduced and extended a testing framework to identify security flaws (SSRF, SQLi) in real-world APIs. Integrated <strong>SecureBERT</strong> and <strong>LLaMA</strong> models to improve semantic classification of sensitive data flows.</p>
+            <span class="tag">Python</span> <span class="tag">Cybersecurity</span> <span class="tag">Machine Learning</span>
         </div>
+
         <div class="project">
             <h3>Full-Stack Administrative Platform</h3>
-            <p>Built a secure management system with React, TypeScript, and Node.js, migrating MySQL to Cloud Firestore.</p>
-            <span class="tag">React</span> <span class="tag">Node.js</span> <span class="tag">Cloud</span>
+            <p>Engineered a secure management platform using React, TypeScript, and Node.js. Successfully migrated MySQL databases to <strong>Cloud Firestore</strong>, ensuring secure data routing and integrity.</p>
+            <span class="tag">React</span> <span class="tag">TypeScript</span> <span class="tag">Cloud Firestore</span>
         </div>
+
         <div class="project">
             <h3>Banking System Simulation</h3>
-            <p>Developed a Java-based banking app focusing on Role-Based Access Control (RBAC) and data integrity.</p>
-            <span class="tag">Java</span> <span class="tag">Security Logic</span> <span class="tag">JUnit</span>
+            <p>Developed a Java-based multi-role simulation implementing <strong>Role-Based Access Control (RBAC)</strong>. Conducted exhaustive JUnit testing to verify data integrity and secure transaction logic.</p>
+            <span class="tag">Java</span> <span class="tag">JUnit</span> <span class="tag">Security Logic</span>
         </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <p><strong>Languages:</strong> Python, Java, SQL, TypeScript, JavaScript</p>
+        <p><strong>Tools:</strong> Git, Docker, Google Colab, Firebase, Node.js</p>
     </section>
 </body>
 </html>
