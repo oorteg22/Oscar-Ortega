@@ -1,0 +1,16 @@
+name: Render CV
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  rendercv:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: sinaatalay/rendercv-action@v0
+        with:
+          cv_file_path: Oscar_Ortega_CV.yaml # Make sure this matches your file name!
+          gh_pages_branch: gh-pages
