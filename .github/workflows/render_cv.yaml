@@ -17,4 +17,4 @@ jobs:
         with:
           cv_file_path: Oscar_Ortega_CV.yaml
           gh_pages_branch: gh-pages
-          force_orphan: true # This wipes the old documentation and puts your resume there
+          force_orphan: true
