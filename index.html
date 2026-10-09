@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oscar Ortega | Software Engineer</title>
+    <title>Oscar Ortega | Software Engineer & Data Analyst</title>
     <style>
         :root { --primary: #004f90; --bg: #fdfdfd; --text: #333; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 850px; margin: auto; padding: 40px 20px; color: var(--text); background-color: var(--bg); }
@@ -18,36 +18,56 @@
         .skill-cat { font-weight: bold; color: var(--primary); }
         a { color: var(--primary); text-decoration: none; font-weight: 600; }
         a:hover { text-decoration: underline; }
+        .project-links { margin-top: 12px; font-size: 0.95em; }
     </style>
 </head>
 <body>
     <header>
-    <h1>Oscar Ortega</h1>
-    <p class="contact-info"><strong>Software Engineering Graduate Student</strong></p>
-    <p class="contact-info">
-        <a href="mailto:oscar.jacob.ortega@gmail.com">Email</a> | 
-        <a href="https://linkedin.com/in/oscar-ortega-29b3ba286" target="_blank">LinkedIn</a> | 
-        <a href="https://github.com/oorteg22" target="_blank">GitHub</a> | 
-    </p>
-</header>
+        <h1>Oscar Ortega</h1>
+        <p class="contact-info"><strong>Software Engineer | Data Analytics & Machine Learning</strong></p>
+        <p class="contact-info">
+            <a href="mailto:oscar.jacob.ortega@gmail.com">Email</a> | 
+            <a href="https://linkedin.com/in/oscar-ortega-29b3ba286" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/oorteg22" target="_blank">GitHub</a>
+        </p>
+    </header>
 
     <section>
         <h2>Professional Summary</h2>
-        <p>Highly motivated M.S. Software Engineering student with a strong B.S. Biology background and eight years of research experience. Hands-on graduate-level experience in secure systems concepts, reverse engineering, and network analysis.</p>
+        <p>Software Engineer with a Master of Science in Software Engineering and a B.S. in Biology. Experienced in building automated data extraction pipelines, exploratory predictive modeling, and interactive dashboards using Python, DuckDB, SQL, and Streamlit, complemented by a background in secure systems, cloud infrastructure, and statistical analysis.</p>
     </section>
 
     <section>
         <h2>Technical Skills</h2>
         <div class="skills-grid">
-            <div><span class="skill-cat">Programming:</span> React, TypeScript, Node.js, Python, Java, SQL</div>
-            <div><span class="skill-cat">Security:</span> Ghidra, Kali Linux, Wireshark</div>
-            <div><span class="skill-cat">Database/Tools:</span> Firebase, MySQL, Docker, Git, Agile</div>
+            <div><span class="skill-cat">Languages & Frameworks:</span> Python (Pandas, NumPy, Scikit-Learn), SQL, Streamlit, Java, TypeScript, React, Node.js</div>
+            <div><span class="skill-cat">Data & Systems:</span> DuckDB, Relational Databases, REST APIs, Docker, Git/GitHub</div>
+            <div><span class="skill-cat">Analytical Methods:</span> Hypothesis Testing, Experimental Design, Predictive Modeling, Regression</div>
+            <div><span class="skill-cat">Security & Infrastructure:</span> Wireshark, Kali Linux, Ghidra, Cloud Firestore, Microsoft 365</div>
         </div>
     </section>
 
     <section>
-        <h2>Software Engineering Projects</h2>
-        
+        <h2>Data & Software Engineering Projects</h2>
+
+        <div class="project">
+            <h3>NCAA Basketball Matchup &amp; Spread Predictor</h3>
+            <p>Built an end-to-end sports analytics pipeline to explore team efficiency metrics and game outcomes across NCAA Division I basketball programs. Wrote a Python script using pandas and requests to fetch season stats from public archives, cleaned the records, and loaded them into a local DuckDB analytical database. Developed SQL queries with groupings and window functions to evaluate relative team efficiency against conference baselines, surfacing game predictions and tactical spread breakdowns via an interactive Streamlit interface.</p>
+            <div class="project-links">
+                <a href="https://github.com/oorteg22/cbb-predictive-pipeline" target="_blank">View GitHub Repository &rarr;</a>
+            </div>
+            <span class="tag">Python</span> <span class="tag">DuckDB</span> <span class="tag">Streamlit</span> <span class="tag">Scikit-Learn</span> <span class="tag">SQL</span>
+        </div>
+
+        <div class="project">
+            <h3>HR Attendance &amp; Workforce Dashboard</h3>
+            <p>Engineered an interactive workforce analytics project to track employee attendance, leave patterns, and remote work trends across quarterly records. Developed an automated Python ETL pipeline using pandas to extract and clean unstructured attendance logs distributed across monthly Excel files, unpivoting records into a standardized relational format. Stored datasets in a local DuckDB database and wrote optimized SQL queries to calculate metrics including daily present rates, leave utilization, and remote pacing inside a dynamic Streamlit dashboard.</p>
+            <div class="project-links">
+                <a href="https://github.com/oorteg22/hr-attendance-analytics" target="_blank">View GitHub Repository &rarr;</a>
+            </div>
+            <span class="tag">Python</span> <span class="tag">DuckDB</span> <span class="tag">Streamlit</span> <span class="tag">Pandas</span> <span class="tag">SQL</span>
+        </div>
+
         <div class="project">
             <h3>VoAPI: Vulnerability-Oriented REST API Security Analysis</h3>
             <p>Reproduced a vulnerability-oriented testing framework published at <strong>USENIX Security</strong>. Validated reproducibility on real-world APIs like Appwrite and Jellyfin, identifying security-relevant endpoints tied to SSRF, SQL injection, and XSS. Enhanced the framework with <strong>SecureBERT</strong> and a fine-tuned <strong>LLaMA-based classifier</strong>.</p>
@@ -68,49 +88,49 @@
     </section> 
 
     <section>
-    <h2>Cybersecurity & Cryptography Lab</h2>
-    
-    <div class="project">
-        <h3>Network Forensics & Decryption Challenge</h3>
-        <p><strong>Environment:</strong> Kali Linux | <strong>Tools:</strong> Wireshark, Hex Editors</p>
-        <ul>
-            <li>Analyzed network traffic captures to intercept and reconstruct "Terminator" themed security credentials.</li>
-            <li>Performed manual <strong>Hexadecimal-to-String</strong> conversions and utilized decryption techniques to recover sensitive passwords (e.g., Sarah Connor's credentials).</li>
-            <li>Utilized <strong>Wireshark</strong> to identify clear-text protocols and understand how data is exposed during insecure transmissions.</li>
-        </ul>
-        <span class="tag">Network Analysis</span> <span class="tag">Cryptography</span> <span class="tag">Kali Linux</span>
-    </div>
+        <h2>Cybersecurity &amp; Cryptography Lab</h2>
+        
+        <div class="project">
+            <h3>Network Forensics &amp; Decryption Challenge</h3>
+            <p><strong>Environment:</strong> Kali Linux | <strong>Tools:</strong> Wireshark, Hex Editors</p>
+            <ul>
+                <li>Analyzed network traffic captures to intercept and reconstruct "Terminator" themed security credentials.</li>
+                <li>Performed manual <strong>Hexadecimal-to-String</strong> conversions and utilized decryption techniques to recover sensitive passwords (e.g., Sarah Connor's credentials).</li>
+                <li>Utilized <strong>Wireshark</strong> to identify clear-text protocols and understand how data is exposed during insecure transmissions.</li>
+            </ul>
+            <span class="tag">Network Analysis</span> <span class="tag">Cryptography</span> <span class="tag">Kali Linux</span>
+        </div>
     </section>
     
     <section>
-    <h2>Work Experience</h2>
-    
-    <div class="project">
-        <h3>Graduate Teaching Assistant</h3>
-        <p><strong>University of Texas at El Paso</strong> | Sept 2025 – Present</p>
-        <ul>
-            <li>Facilitating student learning in core Software Engineering principles.</li>
-            <li>Assisting in technical troubleshooting and grading complex coding assignments.</li>
-        </ul>
-    </div>
+        <h2>Work Experience</h2>
+        
+        <div class="project">
+            <h3>Graduate Teaching Assistant</h3>
+            <p><strong>University of Texas at El Paso</strong> | Sept 2025 – Present</p>
+            <ul>
+                <li>Facilitating student learning in core Software Engineering principles.</li>
+                <li>Assisting in technical troubleshooting and grading complex coding assignments.</li>
+            </ul>
+        </div>
 
-    <div class="project">
-        <h3>Database &amp; BI Consultant (Contract)</h3>
-        <p><strong>NovaMax Health</strong> | Oct 2024 – Nov 2025</p>
-        <ul>
-            <li>Designed and optimized relational database schemas to aggregate fragmented clinic scheduling and billing data, facilitating clean data ingestion for clinical reporting.</li>
-            <li>Developed SQL queries and automated data pipelines that transformed raw patient transaction records into structured, analytics-ready datasets.</li>
-        </ul>
-    </div>
+        <div class="project">
+            <h3>Database &amp; BI Consultant (Contract)</h3>
+            <p><strong>NovaMax Health</strong> | Oct 2024 – Nov 2025</p>
+            <ul>
+                <li>Designed and optimized relational database schemas to aggregate fragmented clinic scheduling and billing data, facilitating clean data ingestion for clinical reporting.</li>
+                <li>Developed SQL queries and automated data pipelines that transformed raw patient transaction records into structured, analytics-ready datasets.</li>
+            </ul>
+        </div>
 
-    <div class="project">
-        <h3>Laboratory Technician / Researcher</h3>
-        <p><strong>University of Texas at El Paso</strong> | November 2019 – July 2023</p>
-        <ul>
-            <li>Managed technical documentation and collaborative research projects for 8+ years.</li>
-            <li>Applied rigorous analytical methods to biological data, transitioning these skills into vulnerability research.</li>
-        </ul>
-    </div>
-</section>
+        <div class="project">
+            <h3>Laboratory Technician / Researcher</h3>
+            <p><strong>University of Texas at El Paso</strong> | November 2019 – July 2023</p>
+            <ul>
+                <li>Managed technical documentation and collaborative research projects for 8+ years.</li>
+                <li>Applied rigorous analytical methods to biological data, transitioning these skills into vulnerability research.</li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
